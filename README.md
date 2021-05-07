@@ -10,22 +10,34 @@ The dashboard must demonstrate relationships and trends for the key metrics as f
 ### Dataset Description
  
 Second mortgage:	Households with a second mortgage statistics
+
 Home equity:	Households with a home equity loan statistics
+
 Debt:	Households with any type of debt statistics
+
 Mortgage Costs:	Statistics regarding mortgage payments, home equity loans, utilities, and property taxes
+
 Home Owner Costs:	Sum of utilities, and property taxes statistics
+
 Gross Rent:	Contract rent plus the estimated average monthly cost of utility features
+
 High school Graduation:	High school graduation statistics
+
 Population Demographics:	Population demographics statistics
+
 Age Demographics:	Age demographic statistics
+
 Household Income:	Total income of people residing in the household
+
 Family Income:	Total income of people related to the householder
 
 ## Project Task: Week 1
 ### Data Import and Preparation:
 
 1.Import data.
+
 2.Figure out the primary key and look for the requirement of indexing.
+
 3.Gauge the fill rate of the variables and devise plans for missing value treatment. Please explain explicitly the reason for the treatment chosen for each variable.
 
 ### Exploratory Data Analysis (EDA):
