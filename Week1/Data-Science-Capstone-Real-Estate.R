@@ -44,12 +44,13 @@ points(mapsr$lng,mapsr$lat, col = "Orange", cex = .01)
 
 #Pie chart
 bad_debt<-sum((data_train$second_mortgage+data_train$home_equity)-data_train$home_equity_second_mortgage)
-good_debt<-sum(data_train$debt)-bad_debt
+debta<-sum(data_train$debt)
 
-debts<-c(good_debt,bad_debt)
-lbl<-c("Good Debt","Bad Debt")
+debts<-c(debta,bad_debt)
+lbl<-c("Debt","Bad Debt")
 pie( debts, labels = lbl,
      main="Debt Pie Chart")
+
 
 #Box and whisker plot
 # Store the graph
