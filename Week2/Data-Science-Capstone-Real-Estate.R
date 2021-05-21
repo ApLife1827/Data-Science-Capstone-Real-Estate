@@ -2,6 +2,8 @@ library(dplyr)
 library(plyr)
 library(imputeTS)
 library(ggplot2)
+library(maps)
+library(mapdata)
 
 #Path of dataset
 setwd("D:/aVDHOOT/SimpliLearn/Data Science Caption/Project_1/Project 1")
@@ -124,5 +126,8 @@ overall_rent_perc_of_income<-sum(data_train$rent_mean)/sum(data_train$family_mea
 overall_rent_perc_of_income
 
 #correlation analysis and heatmap
-cor(data_train[,-c(4,5,6,7,8,9,81)])
-heatmap(cor(data_train[,-c(4,5,6,7,8,9,81)]))
+cor(data_train[,c("COUNTYID","STATEID","zip_code","pop","family_mean",'second_mortgage', 'home_equity', 'debt','hs_degree','median_age','pct_own', 'married','separated', 'divorced')])
+heatmap(cor(data_train[,c('COUNTYID','STATEID','zip_code','pop', 'family_mean',
+                          'second_mortgage', 'home_equity', 'debt','hs_degree',
+                          'median_age','pct_own', 'married','separated', 'divorced')]))
+
